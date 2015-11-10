@@ -1,0 +1,19 @@
+# Logfile created on 2015-10-17 08:29:19 -0400 by logger.rb/44203
+D, [2015-10-17T08:29:19.044419 #6582] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2015-10-17T08:30:15.114683 #6584] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2015-10-17T08:33:17.351278 #6590] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2015-10-17T08:33:54.388881 #6591] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2015-10-17T08:35:56.493514 #6593] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2015-10-17T08:37:45.937185 #6594] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2015-10-17T08:37:45.952908 #6594] DEBUG -- : REQUESTING PAGE: POST /bienvenida with {"nombre"=>"Israel"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2015-10-17T08:39:13.188563 #6606] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2015-10-17T08:39:13.204129 #6606] DEBUG -- : REQUESTING PAGE: POST /bienvenida with {"nombre"=>"Israel"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2015-10-17T08:40:28.886851 #6608] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2015-10-17T08:40:28.902286 #6608] DEBUG -- : REQUESTING PAGE: POST /bienvenida with {"nombre"=>"Israel"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2015-10-17T08:40:50.036553 #6609] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2015-10-17T08:40:50.051982 #6609] DEBUG -- : REQUESTING PAGE: POST /bienvenida with {"nombre"=>"Israel"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2015-10-17T08:42:33.790609 #6612] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2015-10-17T08:42:33.805888 #6612] DEBUG -- : REQUESTING PAGE: POST /bienvenida with {"nombre"=>"Israel"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2015-10-17T08:46:48.423113 #6615] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2015-10-17T08:46:48.438472 #6615] DEBUG -- : REQUESTING PAGE: POST /bienvenida with {"nombre"=>"Israel"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2015-11-09T21:57:33.310175 #1784] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
