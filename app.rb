@@ -4,6 +4,6 @@ get '/' do
 	erb :index
 end
 
-post '/juego' do
+get '/juego' do
 	erb :juego
 end
