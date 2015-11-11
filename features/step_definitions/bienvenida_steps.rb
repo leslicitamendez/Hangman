@@ -9,3 +9,7 @@ end
 Then(/^veo la imagen "(.*?)"$/) do |imagen|
   last_response.should have_xpath("//img[@src=\"#{imagen}\"]")
 end
+
+Then(/^veo el boton "(.*?)"$/) do |boton|
+  click_button(boton)
+end

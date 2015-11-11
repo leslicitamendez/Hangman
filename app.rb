@@ -4,6 +4,6 @@ get '/' do
 	erb :index
 end
 
-post '/bienvenida' do
-	"Hola "+params[:nombre]
+post '/juego' do
+	erb :juego
 end

@@ -3,3 +3,4 @@ Feature: Bienvenida
 		Given me encuentro en la pagina de inicio
 		Then veo el mensaje "Bienvenido a Hangman"
 		Then veo la imagen "/hangman.jpg"
+		Then veo el boton "Jugar"
