@@ -1,3 +1,8 @@
 <center>
-	<h3>Adivina la palabra</h3>
+	<h3>Adivina la palabra</h3><br><br>
+	<%=@letter%>
+	<form name="Jugar" action="/juego" method="post">
+		<input type="text" name="letra" placeholder="Ingrese una letra">
+		<input type="submit" id="adivina" value="Adivinar" class="btn btn-sm btn-default">
+	</form>
 </center>
