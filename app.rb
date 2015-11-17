@@ -1,8 +1,16 @@
 require 'sinatra'
 
-	@palabra="maniobra"
+def iniciar_juego
+	$palabra="maniobra".split('')
+	$palabra_a_adivinar=Array.new
+	$letraa=''
+	$intentos=0
+	$total_intentos=6
+end
 
 get '/' do
+	iniciar_juego
+	$palabra.each {$palabra_a_adivinar.push('_')}
 	erb :index
 end
 
@@ -11,6 +19,6 @@ get '/juego' do
 end
 
 post '/juego' do
-	@letter=params[:letra]
+	$letraa=params[:letra]
 	erb :juego
 end

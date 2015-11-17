@@ -1,6 +1,8 @@
 <center>
 	<h3>Adivina la palabra</h3><br><br>
-	<%=@letter%>
+	<img src="/images/intento_0.jpg"><br>
+	<%=$palabra_a_adivinar%><br>
+	<%=$letraa%>
 	<form name="Jugar" action="/juego" method="post">
 		<input type="text" name="letra" placeholder="Ingrese una letra">
 		<input type="submit" id="adivina" value="Adivinar" class="btn btn-sm btn-default">
