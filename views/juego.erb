@@ -1,10 +1,30 @@
 <center>
-	<h3>Adivina la palabra</h3><br><br>
-	<img src="/images/intento_0.jpg"><br>
-	<%=$palabra_a_adivinar%><br>
-	<%=$letraa%>
+	<h2>Adivina la palabra</h2><br><br>
+	<input type="hidden" name="intentos" value=<%=$intentos%>>
+	<%case $intentos
+		when 0%>
+			<img src="/images/intento_0.jpg" width="200" height="200"><br>
+		<%when 1%>
+			<img src="/images/intento_1.jpg" width="200" height="200"><br>
+		<%when 2%>
+			<img src="/images/intento_2.jpg" width="200" height="200"><br>
+		<%when 3%>
+			<img src="/images/intento_3.jpg" width="200" height="200"><br>
+		<%when 4%>
+			<img src="/images/intento_4.jpg" width="200" height="200"><br>
+		<%when 5%>
+			<img src="/images/intento_5.jpg" width="200" height="200"><br>
+		<%when 6%>
+			<img src="/images/intento_6.jpg" width="200" height="200"><br>
+	<%end%>
+	<%$palabra_a_adivinar.each do |letraa|%>
+		<%=letraa%>
+	<%end%>
+	<br><br>
 	<form name="Jugar" action="/juego" method="post">
-		<input type="text" name="letra" placeholder="Ingrese una letra">
+		<input type="text" name="letra" placeholder="Ingrese una letra"> &nbsp;&nbsp;
 		<input type="submit" id="adivina" value="Adivinar" class="btn btn-sm btn-default">
 	</form>
+	<br><br>
+	<p>Número de intentos: <%=$total_intentos - $intentos%></p>
 </center>

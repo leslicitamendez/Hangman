@@ -20,5 +20,17 @@ end
 
 post '/juego' do
 	$letraa=params[:letra]
+	if $palabra.include?($letraa)
+		(0..($palabra.size-1)).each {|i| $palabra_a_adivinar[i]=$letraa unless $palabra[i]!=$letraa}
+	else
+		$intentos+=1
+	end
+	if($intentos==$total_intentos)
+		redirect '/perdedor'
+	end
 	erb :juego
+end
+
+get '/perdedor' do
+	erb :perdedor
 end
