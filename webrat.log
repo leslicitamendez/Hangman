@@ -411,3 +411,14 @@ D, [2015-12-01T04:30:37.335798 #73389] DEBUG -- : REQUESTING PAGE: GET /juego wi
 D, [2015-12-01T04:30:37.345144 #73389] DEBUG -- : REQUESTING PAGE: POST /juego with {"letra"=>"x"} and HTTP headers {"HTTP_REFERER"=>"/juego"}
 D, [2015-12-01T04:30:37.350834 #73389] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
 D, [2015-12-01T04:30:37.355019 #73389] DEBUG -- : REQUESTING PAGE: POST /pedir_pista with {} and HTTP headers {"HTTP_REFERER"=>"/juego"}
+D, [2015-12-01T06:42:15.221439 #74422] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2015-12-01T06:42:15.260276 #74422] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2015-12-01T06:42:15.264414 #74422] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2015-12-01T06:42:15.269248 #74422] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2015-12-01T06:42:15.274154 #74422] DEBUG -- : REQUESTING PAGE: POST /juego with {"letra"=>"a"} and HTTP headers {"HTTP_REFERER"=>"/juego"}
+D, [2015-12-01T06:42:15.281699 #74422] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2015-12-01T06:42:15.286615 #74422] DEBUG -- : REQUESTING PAGE: POST /juego with {"letra"=>"a"} and HTTP headers {"HTTP_REFERER"=>"/juego"}
+D, [2015-12-01T06:42:15.295250 #74422] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2015-12-01T06:42:15.300355 #74422] DEBUG -- : REQUESTING PAGE: POST /juego with {"letra"=>"x"} and HTTP headers {"HTTP_REFERER"=>"/juego"}
+D, [2015-12-01T06:42:15.306172 #74422] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2015-12-01T06:42:15.310815 #74422] DEBUG -- : REQUESTING PAGE: POST /pedir_pista with {} and HTTP headers {"HTTP_REFERER"=>"/juego"}
