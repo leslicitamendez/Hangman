@@ -2,7 +2,7 @@ require 'sinatra'
 
 def iniciar_juego
 	$palabras=Array.new
-	$palabras=["maniobra","aviacion","boeing","airbus","cessna","piloto","aeropuerto","despegar","aterrizar"]
+	$palabras=["maniobra","aviacion","boeing","airbus","cessna","piloto","aeropuerto","despegar","aterrizar","umbral","helicoptero","pista"]
 	$letras_incorrectas=Array.new
 	$letras_correctas=Array.new
 	$palabra_a_adivinar=Array.new
