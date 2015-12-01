@@ -11,5 +11,5 @@ Then(/^veo la imagen "(.*?)"$/) do |imagen|
 end
 
 Then(/^veo el boton "(.*?)"$/) do |boton|
-  click_link(boton)
+  last_response.body.should =~ /#{boton}/m
 end

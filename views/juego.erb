@@ -1,34 +1,51 @@
 <center>
-	<h2>Adivina la palabra</h2><br><br>
+	<h2>Adivina la palabra</h2><br>
+	<div align="right">
+		<p>Número de intentos: <b><%=$total_intentos - $intentos%></b></p>
+		<p>Puntaje: <b><%=$puntos%></b></p>
+	</div>
+	
 	<input type="hidden" name="intentos" value=<%=$intentos%>>
+	<input type="hidden" name="puntos" value=<%=$puntos%>>
 	<%case $intentos
 		when 0%>
-			<img src="/images/intento_0.jpg" width="200" height="200"><br>
+			<img src="/images/0.jpg" width="250" height="300"><br>
 		<%when 1%>
-			<img src="/images/intento_1.jpg" width="200" height="200"><br>
+			<img src="/images/1.jpg" width="250" height="300"><br>
 		<%when 2%>
-			<img src="/images/intento_2.jpg" width="200" height="200"><br>
+			<img src="/images/2.jpg" width="250" height="300"><br>
 		<%when 3%>
-			<img src="/images/intento_3.jpg" width="200" height="200"><br>
+			<img src="/images/3.jpg" width="250" height="300"><br>
 		<%when 4%>
-			<img src="/images/intento_4.jpg" width="200" height="200"><br>
+			<img src="/images/4.jpg" width="250" height="300"><br>
 		<%when 5%>
-			<img src="/images/intento_5.jpg" width="200" height="200"><br>
+			<img src="/images/5.jpg" width="250" height="300"><br>
 		<%when 6%>
-			<img src="/images/intento_6.jpg" width="200" height="200"><br>
+			<img src="/images/6.jpg" width="250" height="300"><br>
 	<%end%>
+	
 	<%$palabra_a_adivinar.each do |letraa|%>
 		<%=letraa%>
-	<%end%>
+	<%end%><br><br>
+	Letras correctas: <b style='color:green;'><%=$letras_correctas.join(' ')%></b><br>
+	Letras incorrectas: <b style='color:red;'><%=$letras_incorrectas.join(' ')%></b>
 	<br><br>
-	<form name="Jugar" action="/juego" method="post">
-		<input type="text" name="letra" placeholder="Ingrese una letra"> &nbsp;&nbsp;
-		<input type="submit" id="adivina" value="Adivinar" class="btn btn-sm btn-default">
-	</form>
-	<br><br>
-	<p>Número de intentos: <%=$total_intentos - $intentos%></p>
-	<br>
-	<form name="Pista" action="/pedir_pista" method="post">
-		<input type="submit" value="Pedir Pista" class="btn btn-sm btn-info">
-	</form>
+	<table>
+		<tr>
+			<td>
+				<form name="Jugar" action="/juego" method="post">
+					<input type="text" name="letra" placeholder="Ingrese una letra"> &nbsp;&nbsp;
+					<input type="submit" id="adivina" value="Adivinar" class="btn btn-sm btn-success">
+				</form>
+			</td>
+			<td width="20px"></td>
+			<td>
+				<form name="Pista" action="/pedir_pista" method="post">
+					<input type="submit" value="Pedir Pista" class="btn btn-sm btn-danger">
+				</form>
+			</td>
+		</tr>
+	</table>
+	
+	
 </center>

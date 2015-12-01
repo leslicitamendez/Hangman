@@ -23,3 +23,29 @@ end
 Then(/^deberia ver la letra "(.*?)"$/) do |letra|
 	last_response.body.should =~ /#{letra}/m
 end
+
+# Scenario: Letra en palabra
+
+Then(/^deberia ver "(.*?)"$/) do |oculto|
+  last_response.body.should include #{oculto}
+end
+
+# Scenario: Dibujar ahorcado
+
+Then(/^deberia ver el dibujo del ahorcado "(.*?)"$/) do |imagen|
+  last_response.body.should =~ /#{imagen}/m
+end
+
+Then(/^numero de intentos "(.*?)"$/) do |intento|
+  last_response.body.should include #{intento}
+end
+
+# Scenario: Pedir pista
+
+When(/^hago click en "(.*?)"$/) do |pista|
+  click_button(pista)
+end
+
+When(/^la pista es la letra "(.*?)"$/) do |letra|
+  last_response.body.should include #{letra}
+end

@@ -11,8 +11,19 @@
 	</head>
 
 	<body>
+		<div id="navbar">
+			<nav class="navbar navbar-inverse" role="navigation">
+				<div class="container" style="height: 50px;">
+					<div class="navbar-header">
+						<a href="/"><img src="/images/hangman_logo.png" width="50%"></a>
+					</div>
+				</div>
+			</nav>
+		</div>
 		<div class="container">
-		    <%=yield%>
+			<!-- <div class="jumbotron"> -->
+				<%=yield%>
+			<!-- </div> -->
 		</div>
 	</body>
 </html>
